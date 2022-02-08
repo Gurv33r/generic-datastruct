@@ -1,5 +1,7 @@
 package datastruct_test
 
+import "github.com/Gurv33r/generic-datastruct"
+
 import "testing"
 
 func TestNewSet(t *testing.T) {
@@ -9,7 +11,7 @@ func TestNewSet(t *testing.T) {
 	case int:
 		t.Skip()
 	default:
-		t.Errorf("Set not of right type:\n\tExpected = %T\nactual = %T\n", []int{}, elems)
+		t.Errorf("Set not of right type:\n\tExpected = %T\n\tactual = %T\n", []int{}, elems)
 	}
 }
 
